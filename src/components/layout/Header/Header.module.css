@@ -1,0 +1,78 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-index-sticky);
+  background-color: var(--color-background);
+  transition: all var(--transition-base);
+  padding: 1rem 0;
+}
+
+.header.scrolled {
+  box-shadow: var(--shadow-md);
+  padding: 0.75rem 0;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+  padding: 0;
+  background: none;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logoImage {
+  height: 95px;
+  width: auto;
+  object-fit: contain;
+}
+
+.header.scrolled .logoImage {
+  height: 70px;
+}
+
+.logoText {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-primary);
+  letter-spacing: -0.02em;
+}
+
+.logoSubtext {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+  .logoImage {
+    height: 70px;
+  }
+
+  .header.scrolled .logoImage {
+    height: 55px;
+  }
+
+  .logoText {
+    font-size: var(--font-size-xl);
+  }
+
+  .logoSubtext {
+    font-size: var(--font-size-sm);
+  }
+}
