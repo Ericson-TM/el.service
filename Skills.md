@@ -1,69 +1,72 @@
 # Skills & Expertise
 
 ## Overview
-This document outlines the technical skills and expertise offered by EL Büroservice. These skills are showcased on the portfolio website and represent the core competencies available for business computing projects.
+This document outlines the technical skills and expertise offered by EL Büroservice. Skills are organized into two categories: learned skills and skills currently in development.
 
 ---
 
-## Skills by Category
+## Fähigkeiten (Learned Skills)
 
 ### Datenanalyse (Data Analysis)
 | Skill | Description |
 |-------|-------------|
-| 📊 Microsoft Excel | Advanced spreadsheet analysis, formulas, pivot tables, and data visualization |
-| 📈 Datenanalyse | Statistical analysis, data interpretation, and insights generation |
+| Microsoft Excel | Advanced spreadsheet analysis, formulas, pivot tables, and data visualization |
+| Datenanalyse | Statistical analysis, data interpretation, and insights generation |
+| R | Statistical programming, data analysis, and visualization with RStudio |
 
 ### Analyse (Analytics)
 | Skill | Description |
 |-------|-------------|
-| 💡 Business Intelligence | Strategic data insights for business decision-making |
+| Business Intelligence | Strategic data insights for business decision-making |
 
 ### Datenbank (Database)
 | Skill | Description |
 |-------|-------------|
-| 🗄️ SQL | Database querying, management, and optimization |
-| 🏗️ Datenbankdesign | Database architecture, schema design, and data modeling |
+| SQL | Database querying, management, and optimization |
+| Datenbankdesign | Database architecture, schema design, and data modeling |
+| MongoDB | NoSQL database management and document-based data storage |
 
 ### Programmierung (Programming)
 | Skill | Description |
 |-------|-------------|
-| 🐍 Python | Scripting, automation, data processing, and application development |
-| ⚡ JavaScript | Frontend and backend development, interactive web applications |
+| Python | Scripting, automation, data processing, and application development |
+| JavaScript | Frontend and backend development, interactive web applications |
+| Java | Object-oriented programming, enterprise applications |
+| TypeScript | Type-safe JavaScript development for scalable applications |
 
 ### Webentwicklung (Web Development)
 | Skill | Description |
 |-------|-------------|
-| ⚛️ React | Modern frontend development with component-based architecture |
-
-### Visualisierung (Visualization)
-| Skill | Description |
-|-------|-------------|
-| 📉 Power BI | Interactive dashboards, reports, and data visualization |
-
-### Automatisierung (Automation)
-| Skill | Description |
-|-------|-------------|
-| ⚙️ Prozessautomatisierung | Workflow automation, efficiency optimization, and process streamlining |
+| React | Modern frontend development with component-based architecture |
+| Vue.js | Progressive JavaScript framework for building user interfaces |
+| Spring Boot | Java-based backend framework for enterprise applications |
+| Vite | Next-generation frontend build tool for fast development |
 
 ### Management
 | Skill | Description |
 |-------|-------------|
-| 📋 Projektmanagement | Project planning, coordination, and delivery |
+| Projektmanagement | Project planning, coordination, and delivery |
 
 ### Beratung (Consulting)
 | Skill | Description |
 |-------|-------------|
-| 🤝 IT-Beratung | Technology consulting, solution architecture, and strategic IT planning |
+| IT-Beratung | Technology consulting, solution architecture, and strategic IT planning |
 
 ---
 
-## Skill Levels
+## In Entwicklung (Currently Learning)
 
-All skills listed are at a professional level suitable for:
-- Small and medium-sized business projects
-- Freelance consulting engagements
-- Business process optimization
-- Custom software solutions
+| Skill | Category | Description |
+|-------|----------|-------------|
+| Power BI | Visualisierung | Interactive dashboards, reports, and data visualization |
+| Prozessautomatisierung | Automatisierung | Workflow automation, efficiency optimization, and process streamlining |
+
+---
+
+## Skill Summary
+
+- **Total Learned Skills**: 17
+- **Skills In Development**: 2
 
 ---
 
@@ -72,12 +75,25 @@ All skills listed are at a professional level suitable for:
 To add a new skill to the website, edit `src/data/skills.js`:
 
 ```javascript
-{
-  id: 13,  // Increment the ID
-  name: 'Skill Name',
-  category: 'Category',
-  icon: '🔧'  // Choose an appropriate emoji
-}
+// For learned skills
+export const skills = [
+  {
+    id: 18,  // Increment the ID
+    name: 'Skill Name',
+    category: 'Category',
+    icon: '🔧'
+  }
+];
+
+// For skills in development
+export const learningSkills = [
+  {
+    id: 3,
+    name: 'New Learning Skill',
+    category: 'Category',
+    icon: '📚'
+  }
+];
 ```
 
 ### Available Categories

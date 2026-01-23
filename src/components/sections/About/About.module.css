@@ -175,6 +175,23 @@
   color: var(--color-text);
 }
 
+/* Learning Section */
+.learningTitle {
+  margin-top: var(--spacing-lg);
+  font-size: var(--font-size-xl);
+  color: var(--color-text-light);
+}
+
+.learningCard {
+  background-color: var(--color-background-alt, #f8f9fa);
+  border-style: dashed;
+  opacity: 0.85;
+}
+
+.learningCard:hover {
+  opacity: 1;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .skillsSection {
