@@ -8,7 +8,7 @@ const ProjectCard = ({ project }) => {
       <div className={styles.projectCard}>
         <div className={styles.projectImagePlaceholder}>
           <div className={styles.projectCategory}>{project.category}</div>
-          <div className={styles.projectImageIcon}>📁</div>
+          <div className={styles.projectImageIcon}>{project.icon || '📁'}</div>
         </div>
         <div className={styles.projectContent}>
           <h3 className={styles.projectTitle}>{project.title}</h3>
@@ -21,9 +21,11 @@ const ProjectCard = ({ project }) => {
             ))}
           </div>
           {project.link && project.link !== '#' && (
-            <Button variant="outline" size="small">
-              View Project
-            </Button>
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+              <Button variant="outline" size="small">
+                Projekt ansehen
+              </Button>
+            </a>
           )}
         </div>
       </div>

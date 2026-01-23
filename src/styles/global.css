@@ -3,11 +3,11 @@
 
 /* Design System - CSS Variables */
 :root {
-  /* Primary Colors - Professional Blue Theme */
-  --color-primary: #0066CC;
-  --color-primary-dark: #004C99;
-  --color-primary-light: #3385D6;
-  --color-primary-lighter: #E6F2FF;
+  /* Primary Colors - Modern Teal/Cyan Theme */
+  --color-primary: #0D9488;
+  --color-primary-dark: #0F766E;
+  --color-primary-light: #14B8A6;
+  --color-primary-lighter: #CCFBF1;
 
   /* Neutral Colors */
   --color-background: #FFFFFF;

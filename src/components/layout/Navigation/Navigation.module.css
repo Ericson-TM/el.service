@@ -39,6 +39,28 @@
   background-color: var(--color-primary);
 }
 
+/* Transparent header state (on hero) */
+.transparent .navLink {
+  color: white;
+}
+
+.transparent .navLink:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.transparent .navLink.active {
+  color: white;
+}
+
+.transparent .navLink.active::after {
+  background-color: white;
+}
+
+.transparent .hamburger span {
+  background-color: white;
+}
+
 /* Mobile Hamburger */
 .hamburger {
   display: none;

@@ -39,14 +39,18 @@ const Hero = () => {
           </div>
           <div className={styles.heroVisual}>
             <div className={styles.visualCard}>
-              <div className={styles.visualIcon}>💼</div>
-              <h3>Business Lösungen</h3>
-              <p>Maßgeschneidert für KMU</p>
+              <div className={styles.visualIcon}>🚀</div>
+              <h3>Digitale Lösungen</h3>
+              <p>Web • Software • KI</p>
             </div>
           </div>
         </div>
       </Container>
-      <div className={styles.heroBackground}></div>
+      <div className={styles.heroBackground}>
+        <div className={styles.floatingShape1}></div>
+        <div className={styles.floatingShape2}></div>
+        <div className={styles.floatingShape3}></div>
+      </div>
     </section>
   );
 };

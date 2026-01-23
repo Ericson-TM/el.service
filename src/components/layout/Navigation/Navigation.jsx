@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from './Navigation.module.css';
 
-const Navigation = () => {
+const Navigation = ({ isScrolled }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
@@ -54,7 +54,7 @@ const Navigation = () => {
   }, []);
 
   return (
-    <nav className={styles.nav}>
+    <nav className={`${styles.nav} ${!isScrolled ? styles.transparent : ''}`}>
       {/* Desktop Navigation */}
       <ul className={styles.navList}>
         {navLinks.map((link) => (

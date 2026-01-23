@@ -30,7 +30,7 @@ const Header = () => {
               className={styles.logoImage}
             />
           </button>
-          <Navigation />
+          <Navigation isScrolled={isScrolled} />
         </div>
       </Container>
     </header>

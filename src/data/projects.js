@@ -1,38 +1,42 @@
 export const projects = [
   {
     id: 1,
-    title: 'Business Analytics Dashboard',
-    description: 'Entwicklung eines umfassenden Analyse-Dashboards für einen Einzelhandelskunden zur Echtzeitverfolgung von Verkäufen, Lagerbeständen und Kundenkennzahlen. Ergebnis: 25% schnellere Entscheidungsfindung.',
-    technologies: ['Power BI', 'SQL', 'Excel'],
-    category: 'Datenanalyse',
+    title: 'Halbmarathon Trainingsplaner',
+    description: 'Universitätsprojekt: Webanwendung zur Erstellung und Verwaltung von Halbmarathon-Trainingsplänen. Nutzer können Pläne nach Zielzeit, Trainingszeitraum, Trainingstagen pro Woche und Intensitätsstufe konfigurieren.',
+    technologies: ['Java', 'Spring Boot', 'Docker', 'Gradle'],
+    category: 'Webentwicklung',
+    icon: '🏃',
     image: '/images/project-placeholder.jpg',
-    link: '#'
+    link: 'https://github.com/Ericson-TM/Webtech-SS20204'
   },
   {
     id: 2,
-    title: 'Automatisiertes Lagerverwaltungssystem',
-    description: 'Entwicklung eines automatisierten Lagerverwaltungssystems, das die manuelle Dateneingabe um 80% reduzierte und die Bestandsgenauigkeit für ein kleines Fertigungsunternehmen verbesserte.',
-    technologies: ['Python', 'SQL', 'Automatisierung'],
-    category: 'Automatisierung',
+    title: 'Schließfach-Verwaltungsportal',
+    description: 'Backend-Management-Portal zur Verwaltung von Schließfächern, Mietern und allen zugehörigen Kundendaten. Umfasst Vertrags- und Mietinformationsverwaltung mit vollständiger CRUD-Funktionalität.',
+    technologies: ['PHP', 'JavaScript', 'MySQL'],
+    category: 'Webentwicklung',
+    icon: '🔐',
     image: '/images/project-placeholder.jpg',
-    link: '#'
+    link: 'https://github.com/Ericson-TM/bl-schliessfach'
   },
   {
     id: 3,
-    title: 'Kundendatenbank-Neugestaltung',
-    description: 'Neugestaltung und Optimierung einer Kundendatenbank für ein dienstleistungsbasiertes Unternehmen. Verbesserung der Abfrageleistung um 60% und besseres Kundenbeziehungsmanagement.',
-    technologies: ['SQL', 'Datenbankdesign'],
-    category: 'Datenbank',
+    title: 'SPY Intraday Trading System',
+    description: 'Entwicklung eines Machine-Learning-basierten Trading-Systems zur Vorhersage kurzfristiger Preisbewegungen des S&P 500 ETFs (SPY). Mit Logistic Regression und Random Forest Modellen, Backtesting-Framework und Paper-Trading über die Alpaca API.',
+    technologies: ['Python', 'scikit-learn', 'pandas', 'Alpaca API'],
+    category: 'Machine Learning',
+    icon: '📈',
     image: '/images/project-placeholder.jpg',
-    link: '#'
+    link: 'https://github.com/DarianWeingaertner/TradingProject'
   },
   {
     id: 4,
-    title: 'Professionelle Portfolio-Website',
-    description: 'Entwicklung einer modernen, responsiven Portfolio-Website zur Präsentation von Business Computing Dienstleistungen. Mit flüssiger Navigation, Kontaktformularen und Mobile-First-Design.',
-    technologies: ['React', 'Vite', 'CSS Modules'],
-    category: 'Webentwicklung',
+    title: 'Strategy Drift Research – AAPL',
+    description: 'Forschungsprojekt zur Untersuchung, wie stark sich die Performance einer Handelsstrategie auf Apple (AAPL) zwischen Backtests und Paper-Live-Trading unterscheidet. Entwicklung einer AAPL-Strategie mit Backtesting und Vergleich der Ergebnisse (Drift: Backtest vs. Live).',
+    technologies: ['Python', 'pandas', 'scikit-learn', 'Alpaca API', 'yfinance'],
+    category: 'Forschung',
+    icon: '🔬',
     image: '/images/project-placeholder.jpg',
-    link: '#'
+    link: 'https://github.com/Ericson-TM/Strategy_Drift_Research'
   }
 ];
