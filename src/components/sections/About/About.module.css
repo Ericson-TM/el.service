@@ -175,6 +175,28 @@
   color: var(--color-text);
 }
 
+/* Skill Categories */
+.skillCategory {
+  margin-bottom: var(--spacing-lg);
+}
+
+.skillCategory:last-child {
+  margin-bottom: 0;
+}
+
+.categoryTitle {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.categoryDescription {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-sm);
+}
+
 /* Learning Section */
 .learningTitle {
   margin-top: var(--spacing-lg);

@@ -1,6 +1,6 @@
 import Container from '../../common/Container/Container';
 import Section from '../../common/Section/Section';
-import { skills, learningSkills } from '../../../data/skills';
+import { skillCategories } from '../../../data/skills';
 import profilePicture from '../../../assets/images/Profile_picture.png';
 import styles from './About.module.css';
 
@@ -46,28 +46,26 @@ const About = () => {
               </a>
             </div>
 
-            {/* Skills Grid */}
+            {/* Skills Section */}
             <div className={styles.skillsSection}>
               <h3>Fähigkeiten & Expertise</h3>
-              <div className={styles.skillsGrid}>
-                {skills.map((skill) => (
-                  <div key={skill.id} className={styles.skillCard}>
-                    <span className={styles.skillIcon}>{skill.icon}</span>
-                    <span className={styles.skillName}>{skill.name}</span>
-                  </div>
-                ))}
-              </div>
 
-              {/* Learning Skills */}
-              <h3 className={styles.learningTitle}>In Entwicklung</h3>
-              <div className={styles.skillsGrid}>
-                {learningSkills.map((skill) => (
-                  <div key={skill.id} className={`${styles.skillCard} ${styles.learningCard}`}>
-                    <span className={styles.skillIcon}>{skill.icon}</span>
-                    <span className={styles.skillName}>{skill.name}</span>
+              {/* Skill Categories */}
+              {skillCategories.map((category) => (
+                <div key={category.id} className={styles.skillCategory}>
+                  <h4 className={styles.categoryTitle}>{category.title}</h4>
+                  <p className={styles.categoryDescription}>{category.description}</p>
+                  <div className={styles.skillsGrid}>
+                    {category.skills.map((skill) => (
+                      <div key={skill.id} className={styles.skillCard}>
+                        <span className={styles.skillIcon}>{skill.icon}</span>
+                        <span className={styles.skillName}>{skill.name}</span>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
+
             </div>
           </div>
         </div>

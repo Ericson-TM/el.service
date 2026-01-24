@@ -1,105 +1,36 @@
-export const skills = [
+export const skillCategories = [
   {
-    id: 1,
-    name: 'Microsoft Excel',
-    category: 'Datenanalyse',
-    icon: '📊'
+    id: 'languages',
+    title: 'Programmiersprachen',
+    description: 'Sprachen, die ich für Backend, Scripting und Datenanalyse einsetze',
+    skills: [
+      { id: 1, name: 'Python', icon: '🐍' },
+      { id: 2, name: 'Java', icon: '☕' },
+      { id: 3, name: 'JavaScript', icon: '⚡' },
+      { id: 4, name: 'TypeScript', icon: '📘' },
+      { id: 5, name: 'PHP', icon: '🐘' },
+      { id: 6, name: 'R', icon: '📊' }
+    ]
   },
   {
-    id: 2,
-    name: 'SQL',
-    category: 'Datenbank',
-    icon: '🗄️'
+    id: 'frameworks',
+    title: 'Frameworks & Libraries',
+    description: 'Moderne Tools für Web- und Softwareentwicklung',
+    skills: [
+      { id: 7, name: 'React', icon: '⚛️' },
+      { id: 8, name: 'Vue.js', icon: '💚' },
+      { id: 9, name: 'Spring Boot', icon: '🍃' },
+      { id: 10, name: 'Vite', icon: '⚡' }
+    ]
   },
   {
-    id: 3,
-    name: 'Python',
-    category: 'Programmierung',
-    icon: '🐍'
-  },
-  {
-    id: 4,
-    name: 'Datenanalyse',
-    category: 'Analyse',
-    icon: '📈'
-  },
-  {
-    id: 5,
-    name: 'Business Intelligence',
-    category: 'Analyse',
-    icon: '💡'
-  },
-  {
-    id: 6,
-    name: 'JavaScript',
-    category: 'Programmierung',
-    icon: '⚡'
-  },
-  {
-    id: 7,
-    name: 'React',
-    category: 'Webentwicklung',
-    icon: '⚛️'
-  },
-  {
-    id: 8,
-    name: 'Datenbankdesign',
-    category: 'Datenbank',
-    icon: '🏗️'
-  },
-  {
-    id: 9,
-    name: 'Projektmanagement',
-    category: 'Management',
-    icon: '📋'
-  },
-  {
-    id: 10,
-    name: 'IT-Beratung',
-    category: 'Beratung',
-    icon: '🤝'
-  },
-  {
-    id: 11,
-    name: 'Java',
-    category: 'Programmierung',
-    icon: '☕'
-  },
-  {
-    id: 12,
-    name: 'TypeScript',
-    category: 'Programmierung',
-    icon: '📘'
-  },
-  {
-    id: 13,
-    name: 'Vue.js',
-    category: 'Webentwicklung',
-    icon: '💚'
-  },
-  {
-    id: 14,
-    name: 'Spring Boot',
-    category: 'Webentwicklung',
-    icon: '🍃'
-  },
-  {
-    id: 15,
-    name: 'Vite',
-    category: 'Webentwicklung',
-    icon: '⚡'
-  },
-  {
-    id: 16,
-    name: 'MongoDB',
-    category: 'Datenbank',
-    icon: '🍃'
-  },
-  {
-    id: 17,
-    name: 'R',
-    category: 'Datenanalyse',
-    icon: '📊'
+    id: 'databases',
+    title: 'Datenbanken',
+    description: 'Relationale und NoSQL-Datenbanksysteme',
+    skills: [
+      { id: 11, name: 'SQL', icon: '🗄️' },
+      { id: 12, name: 'MongoDB', icon: '🍃' }
+    ]
   }
 ];
 
@@ -117,3 +48,6 @@ export const learningSkills = [
     icon: '⚙️'
   }
 ];
+
+// Legacy export for backwards compatibility
+export const skills = skillCategories.flatMap(cat => cat.skills);
