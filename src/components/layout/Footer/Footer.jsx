@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Container from '../../common/Container/Container';
 import styles from './Footer.module.css';
 
@@ -81,14 +82,16 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Copyright */}
+        {/* Copyright & Legal Links */}
         <div className={styles.footerBottom}>
           <p className={styles.copyright}>
-            &copy; {currentYear} EL Services. All rights reserved.
+            &copy; {currentYear} EL Büroservice. Alle Rechte vorbehalten.
           </p>
-          <p className={styles.builtWith}>
-            Erstellt mit React & Vite
-          </p>
+          <div className={styles.legalLinks}>
+            <Link to="/impressum" className={styles.legalLink}>Impressum</Link>
+            <span className={styles.legalSeparator}>|</span>
+            <Link to="/datenschutz" className={styles.legalLink}>Datenschutz</Link>
+          </div>
         </div>
       </Container>
     </footer>

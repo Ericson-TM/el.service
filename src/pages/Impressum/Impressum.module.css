@@ -1,0 +1,90 @@
+.impressumPage {
+  min-height: 100vh;
+  padding: var(--spacing-2xl) 0;
+  background-color: var(--color-background-alt);
+}
+
+.backLink {
+  display: inline-block;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--spacing-lg);
+  transition: color var(--transition-base);
+}
+
+.backLink:hover {
+  color: var(--color-primary-dark);
+}
+
+.pageTitle {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.section {
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-lg);
+  background-color: var(--color-background);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.section h2 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.section p {
+  font-size: var(--font-size-base);
+  line-height: 1.8;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+}
+
+.section p:last-child {
+  margin-bottom: 0;
+}
+
+.section a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+.section a:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+.section strong {
+  color: var(--color-text);
+}
+
+.section em {
+  color: var(--color-text-light);
+}
+
+@media (max-width: 768px) {
+  .impressumPage {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .pageTitle {
+    font-size: var(--font-size-3xl);
+  }
+
+  .section {
+    padding: var(--spacing-md);
+  }
+
+  .section h2 {
+    font-size: var(--font-size-lg);
+  }
+}
