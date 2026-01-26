@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Header from './components/layout/Header/Header';
 import Footer from './components/layout/Footer/Footer';
 import CookieBanner, { hasAnalyticsConsent } from './components/common/CookieBanner/CookieBanner';
@@ -35,6 +36,7 @@ function App() {
         <CookieBanner onConsentChange={handleConsentChange} />
         {/* Vercel Analytics - only loads when user accepts cookies */}
         {/* {analyticsEnabled && <Analytics />} */}
+        <SpeedInsights />
       </div>
     </Router>
   );
