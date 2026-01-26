@@ -10,6 +10,8 @@ import styles from './App.module.css';
 
 import { Analytics } from '@vercel/analytics/react';
 
+import { SpeedInsights } from '@vercel/speed-insights/react';
+
 function App() {
   const [analyticsEnabled, setAnalyticsEnabled] = useState(hasAnalyticsConsent());
 
@@ -32,6 +34,8 @@ function App() {
         <CookieBanner onConsentChange={handleConsentChange} />
         {/* Vercel Analytics - only loads when user accepts cookies */}
         {analyticsEnabled && <Analytics />}
+        {/* Vercel Speed Insights - only loads when user accepts cookies */}
+        {analyticsEnabled && <SpeedInsights />}
       </div>
     </Router>
   );
