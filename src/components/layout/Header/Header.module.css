@@ -6,13 +6,13 @@
   z-index: var(--z-index-sticky);
   background-color: transparent;
   transition: all var(--transition-base);
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 .header.scrolled {
   background-color: var(--color-background);
   box-shadow: var(--shadow-md);
-  padding: 0.75rem 0;
+  padding: 0.25rem 0;
 }
 
 .headerContent {
@@ -36,13 +36,13 @@
 }
 
 .logoImage {
-  height: 95px;
+  height: 140px;
   width: auto;
   object-fit: contain;
 }
 
 .header.scrolled .logoImage {
-  height: 70px;
+  height: 100px;
 }
 
 .logoText {
@@ -62,11 +62,11 @@
 
 @media (max-width: 768px) {
   .logoImage {
-    height: 70px;
+    height: 100px;
   }
 
   .header.scrolled .logoImage {
-    height: 55px;
+    height: 70px;
   }
 
   .logoText {
