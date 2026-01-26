@@ -9,7 +9,6 @@ import Datenschutz from './pages/Datenschutz/Datenschutz';
 import styles from './App.module.css';
 
 import { Analytics } from '@vercel/analytics/react';
-
 import { SpeedInsights } from '@vercel/speed-insights/react';
 
 function App() {
