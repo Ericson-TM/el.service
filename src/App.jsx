@@ -8,10 +8,7 @@ import Impressum from './pages/Impressum/Impressum';
 import Datenschutz from './pages/Datenschutz/Datenschutz';
 import styles from './App.module.css';
 
-// TODO: When ready to add Vercel Analytics:
-// 1. Run: npm install @vercel/analytics
-// 2. Uncomment the import below:
-// import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [analyticsEnabled, setAnalyticsEnabled] = useState(hasAnalyticsConsent());
@@ -34,7 +31,7 @@ function App() {
         <Footer />
         <CookieBanner onConsentChange={handleConsentChange} />
         {/* Vercel Analytics - only loads when user accepts cookies */}
-        {/* {analyticsEnabled && <Analytics />} */}
+        {analyticsEnabled && <Analytics />}
       </div>
     </Router>
   );
