@@ -1,0 +1,12 @@
+# Robots.txt for EL Büroservice
+# https://www.robotstxt.org/
+
+User-agent: *
+Allow: /
+
+# Disallow access to build artifacts and development files
+Disallow: /dist/
+Disallow: /*.map$
+
+# Sitemap (uncomment and update when you have a sitemap)
+# Sitemap: https://yourdomain.com/sitemap.xml

@@ -1,25 +1,42 @@
+import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header/Header';
 import Footer from './components/layout/Footer/Footer';
-import Hero from './components/sections/Hero/Hero';
-import About from './components/sections/About/About';
-import Services from './components/sections/Services/Services';
-import Portfolio from './components/sections/Portfolio/Portfolio';
-import Contact from './components/sections/Contact/Contact';
+import CookieBanner, { hasAnalyticsConsent } from './components/common/CookieBanner/CookieBanner';
+import Home from './pages/Home/Home';
+import Impressum from './pages/Impressum/Impressum';
+import Datenschutz from './pages/Datenschutz/Datenschutz';
 import styles from './App.module.css';
 
+// TODO: When ready to add Vercel Analytics:
+// 1. Run: npm install @vercel/analytics
+// 2. Uncomment the import below:
+// import { Analytics } from '@vercel/analytics/react';
+
 function App() {
+  const [analyticsEnabled, setAnalyticsEnabled] = useState(hasAnalyticsConsent());
+
+  const handleConsentChange = (accepted) => {
+    setAnalyticsEnabled(accepted);
+  };
+
   return (
-    <div className={styles.app}>
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Services />
-        <Portfolio />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className={styles.app}>
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/impressum" element={<Impressum />} />
+            <Route path="/datenschutz" element={<Datenschutz />} />
+          </Routes>
+        </main>
+        <Footer />
+        <CookieBanner onConsentChange={handleConsentChange} />
+        {/* Vercel Analytics - only loads when user accepts cookies */}
+        {/* {analyticsEnabled && <Analytics />} */}
+      </div>
+    </Router>
   );
 }
 
