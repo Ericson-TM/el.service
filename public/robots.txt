@@ -8,5 +8,5 @@ Allow: /
 Disallow: /dist/
 Disallow: /*.map$
 
-# Sitemap (uncomment and update when you have a sitemap)
-# Sitemap: https://yourdomain.com/sitemap.xml
+# Sitemap (uncomment when you have a sitemap)
+# Sitemap: https://xn--el-broservice-zob.com/sitemap.xml
